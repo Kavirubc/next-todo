@@ -1,10 +1,9 @@
 import { send } from "../api/todo";
+import { todoData } from "../api/todo";
+
 
 
 export default function Home() {
-
-
-
 
   return (
     <>
@@ -17,7 +16,10 @@ export default function Home() {
           </form>
         </div>
         <div>
-          The list of todos will be here
+          <p>
+            This is where the todo list will be
+            
+          </p>
         </div>
       </div>
     </>

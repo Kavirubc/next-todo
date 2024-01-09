@@ -7,4 +7,13 @@ export async function send(formData: FormData) {
     }
     console.log("send");
     console.log(rawFormData.todo);
+    return rawFormData.todo;
 }
+
+export async function todoData(rawFormData: string) {
+    const todoData = {
+        //rawFormData.todo
+    }
+    return todoData;
+}
+
