@@ -11,13 +11,13 @@ export default function Home() {
         <div className="my-5">
           <form className="flex flex-col" action={send}>
             <input id="todo" name="todo" className="border-2 border-black max-w-xs" type="text" placeholder="Add todo" />
-            <button className="border-2 border-black p-2 bg-indigo-400 mt-4 max-w-xs">Add</button>
+            <button className="border-2 border-black p-2 bg-indigo-400 hover:bg-indigo-600 mt-4 max-w-xs">Add</button>
           </form>
         </div>
         <div className="my-5">
             <form className="flex flex-col" action={del}>
             <input id="task" name="task" className="border-2 border-black max-w-xs" type="text" placeholder="Delete ID" />
-            <button className="border-2 border-black p-2 bg-red-400 mt-4 max-w-xs">Delete</button>
+            <button className="border-2 border-black p-2 bg-red-400 hover:bg-red-600 mt-4 max-w-xs">Delete</button>
           </form>
         </div>
       </div>
