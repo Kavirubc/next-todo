@@ -1,7 +1,6 @@
+'use client'
+
 import { send } from "../api/todo";
-import { todoData } from "../api/todo";
-
-
 
 export default function Home() {
 
@@ -14,12 +13,6 @@ export default function Home() {
             <input id="todo" name="todo" className="border-2 border-black max-w-xs" type="text" placeholder="Add todo" />
             <button className="border-2 border-black p-2 bg-indigo-400 mt-4 max-w-xs">Add</button>
           </form>
-        </div>
-        <div>
-          <p>
-            This is where the todo list will be
-            
-          </p>
         </div>
       </div>
     </>
