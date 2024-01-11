@@ -1,6 +1,6 @@
 'use client'
 
-import { send } from "../api/todo";
+import { del, send } from "../api/todo";
 
 export default function Home() {
 
@@ -12,6 +12,12 @@ export default function Home() {
           <form className="flex flex-col" action={send}>
             <input id="todo" name="todo" className="border-2 border-black max-w-xs" type="text" placeholder="Add todo" />
             <button className="border-2 border-black p-2 bg-indigo-400 mt-4 max-w-xs">Add</button>
+          </form>
+        </div>
+        <div className="my-5">
+            <form className="flex flex-col" action={del}>
+            <input id="task" name="task" className="border-2 border-black max-w-xs" type="text" placeholder="Delete ID" />
+            <button className="border-2 border-black p-2 bg-red-400 mt-4 max-w-xs">Delete</button>
           </form>
         </div>
       </div>
